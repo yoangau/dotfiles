@@ -37,3 +37,5 @@ alias lspci='lspci -nnk'
 
 alias :q="exit"
 
+alias ods="onedrive --synchronize --verbose --confdir='~/.config/onedrivePersonal' --syncdir='~/OnedrivePersonal';onedrive --synchronize --verbose --confdir='~/.config/onedriveWork' --syncdir='~/OnedriveWork'"
+
