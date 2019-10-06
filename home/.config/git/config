@@ -11,7 +11,7 @@
   pristine = clean -ffxd
   cleanup = clean -ffXd
   make-new-repo = filter-branch --prune-empty --subdirectory-filter # [subdir] -- [REF]
-[url "https://github.com/abelfodil/"]
+[url "https://github.com/yoangau/"]
   insteadOf = me:
 [core]
   excludesfile = ~/.gitignore_global
