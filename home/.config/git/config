@@ -1,6 +1,6 @@
 [user]
-  email = ans.belfodil@gmail.com
-  name = Anes Belfodil
+  email = yoangau@gmail.com
+  name = Yoan Gauthier
 [credential]
   helper = /usr/lib/git-core/git-credential-libsecret
 [alias]
