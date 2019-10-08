@@ -20,6 +20,7 @@ alias microscope='mpv av://v4l2:/dev/v4l/by-id/usb-GenesysLogic_Technology_Co.__
 
 # Other
 alias broken-ln='find -xtype l -print'
+alias bt='systemctl start bluetooth.service'
 alias btc='bluetoothctl'
 alias docker-prune='docker system prune --all --volumes'
 alias id-key='xev | awk -F'"'"'[ )]+'"'"' '"'"'/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'"'"
@@ -37,5 +38,6 @@ alias lspci='lspci -nnk'
 
 alias :q="exit"
 
+alias listalias="cat ~/.config/fish/conf.d/02_alias.fish"
 alias ods="onedrive --synchronize --verbose --confdir='~/.config/onedrivePersonal' --syncdir='~/OnedrivePersonal';onedrive --synchronize --verbose --confdir='~/.config/onedriveWork' --syncdir='~/OnedriveWork'"
 
