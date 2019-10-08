@@ -8,7 +8,7 @@ secondary_mode="--auto"
 
 disconnected=$(xrandr | awk "/$secondary_monitor disconnected/")
 
-[ $HOSTNAME == "h500i" ] && primary_mode="--mode 1920x1080 --rate 144"
+[ $HOSTNAME == "arch-desk" ] && primary_mode="--mode 1920x1080 --rate 144"
 (pgrep -f top-secondary > /dev/null) && kill $(pgrep -f top-secondary)
 
 case "$@" in
