@@ -9,8 +9,8 @@ floating_modifier $mod
 
 #focus_follows_mouse no
 
-bindsym $alt+Tab focus right
-bindsym $alt+Shift+Tab focus left
+bindsym $mod+Control+1 focus left
+bindsym $mod+Control+2 focus right
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
