@@ -38,6 +38,6 @@ else
   image=$(mktemp)
   grim $image
   convert $image -blur 0x1 $image
-  swaylock -i $image "$@"
+  swaylock -i -f $image "$@"
   rm -f $image
 fi
