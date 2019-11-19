@@ -8,7 +8,7 @@ if [ -z "$WAYLAND_DISPLAY" ]; then
   W='#880000ff' # wrong
   V='#fb4934ff' # verifying
 
-  i3lock \
+  i3lock -e \
     --insidevercolor=$C \
     --ringvercolor=$V \
     --insidewrongcolor=$C \

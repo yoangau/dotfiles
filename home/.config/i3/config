@@ -371,7 +371,7 @@ exec --no-startup-id weather
 exec --no-startup-id udiskie -T
 exec --no-startup-id dunst
 exec --no-startup-id wallpaper
-exec --no-startup-id xss-lock lock
+exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id thunderbird
 # exec --no-startup-id autolock
 focus_follows_mouse no
