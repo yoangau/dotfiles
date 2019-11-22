@@ -83,8 +83,9 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
-assign [class="Thunderbird"] $workspace7
-assign [class="keepassxc"] $workspace8
+assign [class="keepassxc"] $workspace0
+assign [class="wavebox"] $workspace8
+assign [class="Caprine"] $workspace7
 
 for_window [class="^Pavucontrol$"] floating enable
 for_window [title="Discord Updater"] floating enable
@@ -344,7 +345,6 @@ bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
 bindsym $mod+b exec firefox
-# bindsym $mod+m exec thunderbird
 bindsym $mod+k exec keepassxc
 
 ## startup scripts ##
@@ -357,5 +357,5 @@ exec --no-startup-id udiskie -T
 exec --no-startup-id dunst
 exec --no-startup-id wallpaper
 exec --no-startup-id xss-lock -l lock
-# exec --no-startup-id thunderbird
-# exec --no-startup-id autolock
+exec --no-startup-id caprine
+exec --no-startup-id wavebox
