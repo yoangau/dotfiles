@@ -32,8 +32,8 @@ if [ -z "$WAYLAND_DISPLAY" ]; then
     --indicator \
     --timestr="%H:%M:%S" \
     --datestr="%A, %m %Y" \
-    --veriftext="hmmm..." \
-    --wrongtext="lolnope"
+    --veriftext="70 iq." \
+    --wrongtext="xD"
 else
   image=$(mktemp)
   grim $image
