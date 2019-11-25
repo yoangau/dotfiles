@@ -359,3 +359,4 @@ exec --no-startup-id wallpaper
 exec --no-startup-id xss-lock -l lock
 exec --no-startup-id caprine
 exec --no-startup-id wavebox
+exec --no-startup-id amixer sset Master mute
