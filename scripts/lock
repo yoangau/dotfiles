@@ -7,7 +7,7 @@ if [ -z "$WAYLAND_DISPLAY" ]; then
   T='#1d2021ff' # text
   W='#880000ff' # wrong
   V='#fb4934ff' # verifying
-
+  amixer sset Master mute
   i3lock -e \
     --insidevercolor=$C \
     --ringvercolor=$V \
