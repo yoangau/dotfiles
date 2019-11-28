@@ -49,7 +49,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 set $workspace1 "1: "
-set $workspace2 "2: " 
+set $workspace2 "2: " 
 set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
@@ -355,8 +355,9 @@ exec --no-startup-id launch_polybar
 exec --no-startup-id weather
 exec --no-startup-id udiskie -T
 exec --no-startup-id dunst
-exec --no-startup-id wallpaper
+# exec --no-startup-id wallpaper
 exec --no-startup-id xss-lock -l lock
 exec --no-startup-id caprine
 exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
+exec --no-startup-id hsetroot -solid "#444444"
