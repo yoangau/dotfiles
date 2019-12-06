@@ -84,8 +84,8 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
 assign [class="keepassxc"] $workspace0
-assign [class="wavebox"] $workspace8
-assign [class="Caprine"] $workspace7
+# assign [class="wavebox"] $workspace8
+# assign [class="Caprine"] $workspace7
 
 for_window [class="^Pavucontrol$"] floating enable
 for_window [title="Discord Updater"] floating enable
@@ -357,7 +357,7 @@ exec --no-startup-id udiskie -T
 exec --no-startup-id dunst
 # exec --no-startup-id wallpaper
 exec --no-startup-id xss-lock -l lock
-exec --no-startup-id caprine
-exec --no-startup-id wavebox
+# exec --no-startup-id caprine
+# exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
 exec --no-startup-id hsetroot -solid "#444444"
