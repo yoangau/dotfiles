@@ -3,7 +3,7 @@
 
 if test (count $argv) -eq 1
   cd ~/Documents/dotfiles/home/.config/fish/conf.d
-  sed '/alias $argv[1]/d' 02_alias.fish
+  sed -i "/alias $argv[1]/d" 02_alias.fish
   git add 02_alias.fish
   git commit -m "remove $argv[1] alias"
   git pull
