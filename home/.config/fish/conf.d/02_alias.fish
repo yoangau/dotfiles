@@ -46,5 +46,5 @@ alias umount-ad="fusermount3 -u ~/arch-desk"
 
 alias dow="cd ~/Downloads"
 alias doc="cd ~/Documents"
-alias dot="cd ~/Documents/Documents/dotfiles"
+alias dot="cd ~/Documents/dotfiles"
 alias pro="cd ~/Documents/projects"
