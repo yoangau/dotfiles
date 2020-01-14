@@ -1,0 +1,22 @@
+#!/bin/python3
+
+import requests
+from bs4 import BeautifulSoup
+import sys
+
+def main():
+    if len(sys.argv) != 2:
+        print('Wrong number of argument')
+        return
+
+    req = requests.get(f'https://www.larousse.fr/dictionnaires/francais/{sys.argv[1]}')
+
+    soup = BeautifulSoup(req.content, "html.parser")
+
+    is_fem = 'féminin' in soup.find('p', class_='CatgramDefinition').text
+
+    print('F' if is_fem else 'M')
+
+
+if __name__ == "__main__":
+    main()
