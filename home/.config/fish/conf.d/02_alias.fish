@@ -43,3 +43,12 @@ alias ods="onedrive --synchronize --verbose --confdir='~/.config/onedrivePersona
 alias mount-adp="sshfs arch-desk-public:/ ~/arch-desk"
 alias mount-ad="sshfs arch-desk:/ ~/arch-desk"
 alias umount-ad="fusermount3 -u ~/arch-desk"
+
+alias dow="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias dot="cd ~/Documents/dotfiles"
+alias pro="cd ~/Documents/projects"
+alias poly="cd ~/OnedriveWork"
+alias pers="cd ~/OnedrivePersonal"
+alias usb="cd /run/media/yoangau"
+alias h20="cd ~/Documents/h20/"

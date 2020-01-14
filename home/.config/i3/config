@@ -51,12 +51,12 @@ bindsym $mod+a focus parent
 workspace_auto_back_and_forth yes
 
 set $workspace1 "1: "
-set $workspace2 "2: " 
+set $workspace2 "2: " 
 set $workspace3 "3: "
 set $workspace4 "4: "
-set $workspace5 "5: "
+set $workspace5 "5: "
 set $workspace6 "6: "
-set $workspace7 "7: "
+set $workspace7 "7: "
 set $workspace8 "8: "
 set $workspace9 "9: "
 set $workspace0 "10: "
@@ -98,8 +98,9 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace0
 
-assign [class="Thunderbird"] $workspace7
-assign [class="keepassxc"] $workspace8
+assign [class="keepassxc"] $workspace0
+# assign [class="wavebox"] $workspace8
+# assign [class="Caprine"] $workspace7
 
 for_window [class="^Pavucontrol$"] floating enable
 for_window [title="Discord Updater"] floating enable
@@ -358,8 +359,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec firefox-nightly
-# bindsym $mod+m exec thunderbird
+bindsym $mod+b exec firefox
 bindsym $mod+k exec keepassxc
 
 ## startup scripts ##
@@ -375,3 +375,9 @@ exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id thunderbird
 # exec --no-startup-id autolock
 focus_follows_mouse no
+# exec --no-startup-id wallpaper
+exec --no-startup-id xss-lock -l lock
+# exec --no-startup-id caprine
+# exec --no-startup-id wavebox
+exec --no-startup-id amixer sset Master mute
+exec --no-startup-id hsetroot -solid "#444444"

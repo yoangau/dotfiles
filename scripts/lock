@@ -7,7 +7,7 @@ if [ -z "$WAYLAND_DISPLAY" ]; then
   T='#1d2021ff' # text
   W='#880000ff' # wrong
   V='#fb4934ff' # verifying
-
+  amixer sset Master mute
   i3lock -e \
     --insidevercolor=$C \
     --ringvercolor=$V \
@@ -32,12 +32,12 @@ if [ -z "$WAYLAND_DISPLAY" ]; then
     --indicator \
     --timestr="%H:%M:%S" \
     --datestr="%A, %m %Y" \
-    --veriftext="hmmm..." \
-    --wrongtext="lolnope"
+    --veriftext="70 iq." \
+    --wrongtext="xD"
 else
   image=$(mktemp)
   grim $image
   convert $image -blur 0x1 $image
-  swaylock -i $image "$@"
+  swaylock -i -f $image "$@"
   rm -f $image
 fi

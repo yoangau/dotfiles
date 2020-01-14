@@ -1,0 +1,46 @@
+#!/bin/python3
+
+import requests
+from bs4 import BeautifulSoup
+import sys
+import subprocess
+
+def main():
+    if len(sys.argv) != 2:
+        print('Wrong number of argument')
+        return
+
+    word = sys.argv[1]
+
+    orth = subprocess.getoutput(f'echo "{word}" | aspell --master=fr -a').splitlines()[1]
+    
+    if '*' not in orth:
+        print('Typo in word:')
+        print(orth)
+        return
+
+
+    req = requests.get(f'https://www.larousse.fr/dictionnaires/francais/{word}')
+
+    soup = BeautifulSoup(req.content, "html.parser")
+
+    text =  soup.find('p', class_='CatgramDefinition')
+
+    if text is None:
+        print('url does not exist')
+        return
+        
+    text = text.text
+
+    
+    is_fem = 'féminin' in text
+
+    if not is_fem and 'masculin' not in text:
+        print('Word is neither F or M')
+        return
+
+    print('F' if is_fem else 'M')
+
+
+if __name__ == "__main__":
+    main()

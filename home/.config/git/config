@@ -2,7 +2,7 @@
   email = yoangau@gmail.com
   name = Yoan Gauthier
 [credential]
-  helper = /usr/lib/git-core/git-credential-libsecret
+	helper = store
 [alias]
   pushall = !git remote | xargs -L1 git push --all
   retrack = !git rm -r --cached . && git add .
