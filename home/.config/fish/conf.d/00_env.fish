@@ -41,3 +41,6 @@ set -xg SDL_VIDEO_X11_DGAMOUSE 0
 
 # Wayland
 set -xg _JAVA_AWT_WM_NONREPARENTING 1
+
+# Cuda
+set -xg CUDA_HOME /opt/cuda

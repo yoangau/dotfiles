@@ -157,10 +157,10 @@ mode "resize" {
     bindsym semicolon resize grow width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
-    bindsym Left resize shrink width 30 px or 30 ppt
-    bindsym Down resize grow height 30 px or 30 ppt
-    bindsym Up resize shrink height 30 px or 30 ppt
-    bindsym Right resize grow width 30 px or 30 ppt
+    bindsym Left resize shrink width 5 px or 5 ppt
+    bindsym Down resize grow height 5 px or 5 ppt
+    bindsym Up resize shrink height 5 px or 5 ppt
+    bindsym Right resize grow width 5 px or 5 ppt
 
 # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -319,7 +319,7 @@ mode "$mode_gaps_left" {
 set $power_control "[l]og out [s]leep [r]eboot [p]oweroff"                                                                                                                                             
 mode  $power_control {
     bindsym l exec i3-msg exit; mode "default"
-    bindsym s exec systemctl sleep; mode "default"
+    bindsym s exec systemctl suspend; mode "default"
     bindsym r exec systemctl reboot; mode "default"
     bindsym p exec systemctl poweroff; mode "default"
     bindsym Return mode "default"
@@ -345,7 +345,7 @@ bindsym $mod+equal exec "mpc volume +5"
 bindsym $mod+d exec "rofi -terminal 'launch_kitty' -show drun"
 
 for_window [instance="kitty"] floating enable;
-for_window [instance="kitty"] move scratchpad; [instance="kitty"] scratchpad show; move position 1680px 26px; resize set height 600px; resize set width 1920px; move scratchpad
+for_window [instance="kitty"] move scratchpad; [instance="kitty"] scratchpad show; move position 0px 26px; resize set height 600px; resize set width 1920px; move scratchpad
 bindsym $mod+Return exec launch_kitty; [instance="kitty"] scratchpad show
 
 bindsym Print exec screenshot
@@ -380,4 +380,4 @@ exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id caprine
 # exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
-exec --no-startup-id hsetroot -solid "#444444"
+exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.jpg
