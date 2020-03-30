@@ -5,7 +5,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer, the value of this option is a string.
-    colorscheme = "gruvbox"
+    colorscheme = "nord"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors, the type of the value is boolean, true or false.
@@ -46,3 +46,6 @@ merged = 0
 name = "jceb/vim-orgmode"
 merged = 0
 
+[[custom_plugins]]
+name = "arcticicestudio/nord-vim"
+merged = 0
