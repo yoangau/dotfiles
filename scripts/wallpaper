@@ -8,7 +8,7 @@ from random import choice
 from subprocess import run
 from time import sleep
 
-wallpapers_path = f"{Path.home()}/Documents/Syncthing/WP/image"
+wallpapers_path = f"{Path.home()}/Documents/wallpapers"
 wallpapers = [filename for filename in iglob(f"{wallpapers_path}/**/*", recursive=True) if
               isfile(filename)]
 
