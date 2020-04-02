@@ -328,7 +328,7 @@ click-left=xdg-open 'https://www.google.com/search?q=weather' &
 
 interval=600
 
-format =  <label>
+format = <label>
 label = %output%
 format-foreground = ${colors.foreground-alt}
 label-foreground = ${colors.foreground}
