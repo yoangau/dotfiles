@@ -26,11 +26,11 @@ while True:
     query = f"https://api.darksky.net/forecast/{api_key}/{location}?units=ca&exclude=minutely,hourly,daily,flags"
     raw_weather_info = loads(request.urlopen(query).read())
     current_weather_info = raw_weather_info["currently"]
-
+    icon = '\uf76a' if int(current_weather_info["temperature"]) >= 0 else '\uf768' 
     temperature = f'{current_weather_info["temperature"]:3.1f}°C'
     feels_like = f'{current_weather_info["apparentTemperature"]:3.1f}°C'
 
-    file_content = f"{temperature}/{feels_like}"
+    file_content = f"{icon} {temperature}/{feels_like}"
     with open(weather_file, "w") as f:
         f.write(file_content)
 
