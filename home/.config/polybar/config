@@ -249,7 +249,7 @@ ramp-volume-1 = 
 ramp-volume-2 = 
 
 format-volume = <ramp-volume> <label-volume>
-format-volume-underline = ${colors.foreground}
+#format-volume-underline = ${colors.foreground}
 
 ramp-volume-foreground = ${colors.foreground-alt}
 
@@ -257,7 +257,7 @@ label-muted = ""
 label-muted-foreground = ${colors.alert}
 #label-muted-underline = ${colors.alert}
 
-format = <label>
+format = <label> <label-volume>
 
 [module/battery]
 type = internal/battery
