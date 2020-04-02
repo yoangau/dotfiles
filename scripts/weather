@@ -14,10 +14,27 @@ weather_file = "/tmp/weather"
 with open(weather_file, "w") as f:
     f.write("")
 
+icons = {
+    "clear-day": "",
+    "clear-night": "",
+    "rain": "",
+    "snow": "",
+    "sleet": "",
+    "wind": "",
+    "fog": "",
+    "cloudy": "",
+    "partly-cloudy-day": "",
+    "partly-cloudy-night": "",
+    "hail": "",
+    "thunderstorm": "",
+    "tornado": ""
+}
+
 while True:
     while True:
         try:
-            location = request.urlopen("https://ipinfo.io/loc", timeout=1).read().decode("utf-8").strip()
+            location = request.urlopen(
+                "https://ipinfo.io/loc", timeout=1).read().decode("utf-8").strip()
             break
         except:
             print("Could not connect. Retrying in 5s...")
@@ -26,7 +43,7 @@ while True:
     query = f"https://api.darksky.net/forecast/{api_key}/{location}?units=ca&exclude=minutely,hourly,daily,flags"
     raw_weather_info = loads(request.urlopen(query).read())
     current_weather_info = raw_weather_info["currently"]
-    icon = '\uf76a' if int(current_weather_info["temperature"]) >= 0 else '\uf768' 
+    icon = icons[current_weather_info["icon"]]
     temperature = f'{current_weather_info["temperature"]:3.1f}°C'
     feels_like = f'{current_weather_info["apparentTemperature"]:3.1f}°C'
 
