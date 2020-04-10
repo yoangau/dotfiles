@@ -348,8 +348,8 @@ for_window [instance="kitty"] floating enable;
 for_window [instance="kitty"] move scratchpad; [instance="kitty"] scratchpad show; move position 0px 26px; resize set height 600px; resize set width 1920px; move scratchpad
 bindsym $mod+Return exec launch_kitty; [instance="kitty"] scratchpad show
 
-bindsym Print exec screenshot
-bindsym Shift+Print exec screenshot snip
+#bindsym Print exec screenshot
+bindsym $mod+Shift+p exec screenshot snip
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
@@ -381,3 +381,4 @@ exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
 exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.jpg
+exec --no-startup-id  xsetwacom set "Wacom Bamboo Connect Pen stylus" rotate ccw

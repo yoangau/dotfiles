@@ -109,8 +109,8 @@ label-visible-padding = 1
 type = internal/network
 interface = ${env:ETHERNET:}
 
-label-connected = 
-format-connected-underline = ${colors.foreground}
+label-connected =   %downspeed:2:4%  %upspeed:2:4%
+# format-connected-underline = ${colors.foreground}
 
 #label-disconnected = 
 #format-disconnected-underline = ${colors.alert}
@@ -124,8 +124,8 @@ format-connected = %{A:launch_kitty nmtui:}<ramp-signal> <label-connected>%{A}
 label-connected = %essid%  %downspeed:2:4%  %upspeed:2:4%
 # format-connected-underline = ${colors.foreground}
 
-label-disconnected = %{A:launch_kitty nmtui:}%{A}
-format-disconnected-underline = ${colors.alert}
+label-disconnected = %{A:launch_kitty nmtui:}%{A}
+# format-disconnected-underline = ${colors.alert}
 format-disconnected-foreground= ${colors.foreground-alt}
 
 ramp-signal-0 = ""
