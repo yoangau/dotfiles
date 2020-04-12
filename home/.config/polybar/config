@@ -108,7 +108,7 @@ label-visible-padding = 1
 [module/bluetooth]
 type = custom/script
 exec = rofi-bluetooth --status
-interval = 1
+interval = 2
 click-left = rofi-bluetooth &
 
 [module/eth]
@@ -328,7 +328,7 @@ exec = yay -Qq | wc -l
 
 [module/weather]
 type = custom/script
-exec = cat /tmp/weather
+exec = weather
 
 click-left=xdg-open 'https://www.google.com/search?q=weather' &
 
