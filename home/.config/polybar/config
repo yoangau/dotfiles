@@ -37,7 +37,7 @@ font-4 = "Hack:size=6;1"
 
 modules-left = i3
 modules-center = installed update date mpd weather 
-modules-right = pulseaudio xkeyboard bluetooth eth wlan cpu battery
+modules-right = xkeyboard bluetooth pulseaudio eth wlan cpu battery
 
 override-redirect = false
 enable-ipc = true
