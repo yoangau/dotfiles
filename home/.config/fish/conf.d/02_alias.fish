@@ -53,5 +53,6 @@ alias pers="cd ~/OnedrivePersonal"
 alias usb="cd /run/media/yoangau"
 alias h20="cd ~/Documents/h20/"
 alias jupyter_run="docker run -p 8888:8888 -v ~/Documents:/home/jovyan/work jupyter/datascience-notebook:latest"
-alias rgb="sudo modprobe i2c-dev i2c-piix4"
+alias rgb="sudo modprobe i2c-dev i2c-piix4 && sudo openrgb"
 
+alias umount_sshfs="fusermount3 -u ~/sshfs-mount/"
