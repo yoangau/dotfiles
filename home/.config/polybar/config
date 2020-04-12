@@ -37,7 +37,7 @@ font-4 = "Hack:size=6;1"
 
 modules-left = i3
 modules-center = installed update date mpd weather 
-modules-right = pulseaudio xkeyboard eth wlan cpu battery
+modules-right = pulseaudio xkeyboard bluetooth eth wlan cpu battery
 
 override-redirect = false
 enable-ipc = true
@@ -104,6 +104,12 @@ label-urgent-padding = 1
 
 label-visible = %name%
 label-visible-padding = 1
+
+[module/bluetooth]
+type = custom/script
+exec = rofi-bluetooth --status
+interval = 1
+click-left = rofi-bluetooth &
 
 [module/eth]
 type = internal/network
