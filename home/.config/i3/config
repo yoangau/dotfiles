@@ -359,7 +359,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec firefox-nightly
+bindsym $mod+b exec firefox
 bindsym $mod+k exec keepassxc
 
 ## startup scripts ##
