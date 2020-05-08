@@ -58,3 +58,8 @@ merged = 0
 [[custom_plugins]]
 name = "rakr/vim-one"
 merged = 0
+
+# add custom_plugins: https://github.com/mhartington/oceanic-next
+[[custom_plugins]]
+  name = "mhartington/oceanic-next"
+  merged = 0
