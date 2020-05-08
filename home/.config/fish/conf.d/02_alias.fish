@@ -39,7 +39,6 @@ alias lspci='lspci -nnk'
 alias :q="exit"
 
 alias listalias="cat ~/.config/fish/conf.d/02_alias.fish"
-alias ods="onedrive --synchronize --verbose --confdir='~/.config/onedrivePersonal' --syncdir='~/OnedrivePersonal';onedrive --synchronize --verbose --confdir='~/.config/onedriveWork' --syncdir='~/OnedriveWork'"
 alias mount-adp="sshfs arch-desk-public:/ ~/arch-desk"
 alias mount-ad="sshfs arch-desk:/ ~/arch-desk"
 alias umount-ad="fusermount3 -u ~/arch-desk"
