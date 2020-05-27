@@ -50,29 +50,29 @@ bindsym $mod+a focus parent
 
 workspace_auto_back_and_forth yes
 
-set $workspace1 "1: "
-set $workspace2 "2: " 
-set $workspace3 "3: "
-set $workspace4 "4: "
-set $workspace5 "5: "
-set $workspace6 "6: "
-set $workspace7 "7: "
-set $workspace8 "8: "
-set $workspace9 "9: "
-set $workspace0 "10: "
+set $workspace1 "1:"
+set $workspace2 "2:" 
+set $workspace3 "3:"
+set $workspace4 "4:"
+set $workspace5 "5:更"
+set $workspace6 "6:"
+set $workspace7 "7:"
+set $workspace8 "8:"
+set $workspace9 "9:"
+set $workspace0 "10:"
 
 # assign workspace
 
-workspace $workspace1 output DVI-D-0
-workspace $workspace2 output DP-2
-workspace $workspace3 output DVI-D-0
-workspace $workspace4 output DP-2
-workspace $workspace5 output DVI-D-0
-workspace $workspace6 output DP-2
-workspace $workspace7 output DVI-D-0
-workspace $workspace8 output DP-2
-workspace $workspace9 output DVI-D-0
-workspace $workspace0 output DP-2
+# workspace $workspace1 output DVI-D-0
+# workspace $workspace2 output DP-2
+# workspace $workspace3 output DVI-D-0
+# workspace $workspace4 output DP-2
+# workspace $workspace5 output DVI-D-0
+# workspace $workspace6 output DP-2
+# workspace $workspace7 output DVI-D-0
+# workspace $workspace8 output DP-2
+# workspace $workspace9 output DVI-D-0
+# workspace $workspace0 output DP-2
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -104,7 +104,7 @@ assign [class="keepassxc"] $workspace0
 
 for_window [class="^Pavucontrol$"] floating enable
 for_window [title="Discord Updater"] floating enable
-
+for_window [class="Org.gnome.Nautilus" instance="org.gnome.Nautilus"] floating enable
 for_window [title="Guake Preferences"] floating enable
 
 # The Chrome "Page Unresponsive" dialog is not floating...
@@ -157,10 +157,10 @@ mode "resize" {
     bindsym semicolon resize grow width 10 px or 10 ppt
 
 # same bindings, but for the arrow keys
-    bindsym Left resize shrink width 30 px or 30 ppt
-    bindsym Down resize grow height 30 px or 30 ppt
-    bindsym Up resize shrink height 30 px or 30 ppt
-    bindsym Right resize grow width 30 px or 30 ppt
+    bindsym Left resize shrink width 5 px or 5 ppt
+    bindsym Down resize grow height 5 px or 5 ppt
+    bindsym Up resize shrink height 5 px or 5 ppt
+    bindsym Right resize grow width 5 px or 5 ppt
 
 # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -319,7 +319,7 @@ mode "$mode_gaps_left" {
 set $power_control "[l]og out [s]leep [r]eboot [p]oweroff"                                                                                                                                             
 mode  $power_control {
     bindsym l exec i3-msg exit; mode "default"
-    bindsym s exec systemctl sleep; mode "default"
+    bindsym s exec systemctl suspend; mode "default"
     bindsym r exec systemctl reboot; mode "default"
     bindsym p exec systemctl poweroff; mode "default"
     bindsym Return mode "default"
@@ -345,11 +345,11 @@ bindsym $mod+equal exec "mpc volume +5"
 bindsym $mod+d exec "rofi -terminal 'launch_kitty' -show drun"
 
 for_window [instance="kitty"] floating enable;
-for_window [instance="kitty"] move scratchpad; [instance="kitty"] scratchpad show; move position 1680px 26px; resize set height 600px; resize set width 1920px; move scratchpad
+for_window [instance="kitty"] move scratchpad; [instance="kitty"] scratchpad show; move position 0px 26px; resize set height 600px; resize set width 1920px; move scratchpad
 bindsym $mod+Return exec launch_kitty; [instance="kitty"] scratchpad show
 
-bindsym Print exec screenshot
-bindsym Shift+Print exec screenshot snip
+#bindsym Print exec screenshot
+bindsym $mod+Shift+p exec screenshot snip
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
@@ -359,7 +359,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec firefox-nightly
+bindsym $mod+b exec chromium
 bindsym $mod+k exec keepassxc
 
 ## startup scripts ##
@@ -380,4 +380,9 @@ exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id caprine
 # exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
-exec --no-startup-id hsetroot -solid "#444444"
+exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.jpg
+exec --no-startup-id xsetwacom set "Wacom Bamboo Connect Pen stylus" rotate ccw
+exec --no-startup-id sudo modprobe i2c-dev i2c-piix4
+exec --no-startup-id sudo openrgb --profile default.orp
+exec --no-startup-id insync start
+

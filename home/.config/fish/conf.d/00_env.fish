@@ -12,6 +12,7 @@ set -xg PATH $PATH $HOME/.dotnet/tools
 
 set -xg PATH $PATH $ANDROID_HOME/tools
 set -xg PATH $PATH $ANDROID_HOME/platform-tools
+set -xg PATH $PATH $HOME/.gem/ruby/2.7.0/bin
 
 # dotnet
 set -xg DOTNET_CLI_TELEMETRY_OPTOUT 1
@@ -41,3 +42,6 @@ set -xg SDL_VIDEO_X11_DGAMOUSE 0
 
 # Wayland
 set -xg _JAVA_AWT_WM_NONREPARENTING 1
+
+# Cuda
+set -xg CUDA_HOME /opt/cuda

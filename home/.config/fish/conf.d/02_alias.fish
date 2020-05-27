@@ -39,7 +39,6 @@ alias lspci='lspci -nnk'
 alias :q="exit"
 
 alias listalias="cat ~/.config/fish/conf.d/02_alias.fish"
-alias ods="onedrive --synchronize --verbose --confdir='~/.config/onedrivePersonal' --syncdir='~/OnedrivePersonal';onedrive --synchronize --verbose --confdir='~/.config/onedriveWork' --syncdir='~/OnedriveWork'"
 alias mount-adp="sshfs arch-desk-public:/ ~/arch-desk"
 alias mount-ad="sshfs arch-desk:/ ~/arch-desk"
 alias umount-ad="fusermount3 -u ~/arch-desk"
@@ -52,3 +51,7 @@ alias poly="cd ~/OnedriveWork"
 alias pers="cd ~/OnedrivePersonal"
 alias usb="cd /run/media/yoangau"
 alias h20="cd ~/Documents/h20/"
+alias jupyter_run="docker run -p 8888:8888 -v ~/Documents:/home/jovyan/work jupyter/datascience-notebook:latest"
+alias rgb="sudo modprobe i2c-dev i2c-piix4 && sudo openrgb"
+
+alias umount_sshfs="fusermount3 -u ~/sshfs-mount/"
