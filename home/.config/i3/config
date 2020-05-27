@@ -384,3 +384,5 @@ exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.jpg
 exec --no-startup-id xsetwacom set "Wacom Bamboo Connect Pen stylus" rotate ccw
 exec --no-startup-id sudo modprobe i2c-dev i2c-piix4
 exec --no-startup-id sudo openrgb --profile default.orp
+exec --no-startup-id insync start
+
