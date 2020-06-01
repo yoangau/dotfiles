@@ -105,6 +105,9 @@ assign [class="keepassxc"] $workspace0
 for_window [class="^Pavucontrol$"] floating enable
 for_window [title="Discord Updater"] floating enable
 
+#for_window [class="autilus" instance="autilus"] resize set 640 480
+for_window [title="Home"] floating ebable
+
 for_window [title="Guake Preferences"] floating enable
 
 # The Chrome "Page Unresponsive" dialog is not floating...
@@ -359,7 +362,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec firefox
+bindsym $mod+b exec google-chrome-stable
 bindsym $mod+k exec keepassxc
 
 ## startup scripts ##
