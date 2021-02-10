@@ -381,7 +381,7 @@ exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id caprine
 # exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
-exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.jpg
+exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.png
 exec --no-startup-id xsetwacom set "Wacom Bamboo Connect Pen stylus" rotate ccw
 exec --no-startup-id sudo modprobe i2c-dev i2c-piix4
 exec --no-startup-id sudo openrgb --profile default.orp
