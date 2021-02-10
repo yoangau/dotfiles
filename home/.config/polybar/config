@@ -42,6 +42,10 @@ modules-right = xkeyboard bluetooth pulseaudio eth wlan cpu battery
 override-redirect = false
 enable-ipc = true
 
+tray-position = right
+tray-padding = 5
+tray-background = ${colors.background}
+
 [module/mpd]
 type = internal/mpd
 
