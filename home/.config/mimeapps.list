@@ -1,11 +1,11 @@
 [Default Applications]
-application/pdf=org.pwmt.zathura.desktop
+application/pdf=google-chrome-beta.desktop
 text/plain=nvim.desktop
 text/x-shellscript=nvim.desktop
-text/html=firefox.desktop
-x-scheme-handler/http=firefox.desktop
-x-scheme-handler/https=firefox.desktop
-x-scheme-handler/about=firefox.desktop
-x-scheme-handler/unknown=firefox.desktop
+text/html=google-chrome-beta.desktop
+x-scheme-handler/http=google-chrome-beta.desktop
+x-scheme-handler/https=google-chrome-beta.desktop
+x-scheme-handler/about=google-chrome-beta.desktop
+x-scheme-handler/unknown=google-chrome-beta.desktop
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 
