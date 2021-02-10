@@ -360,7 +360,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec chromium
+bindsym $mod+b exec google-chrome-beta
 bindsym $mod+k exec keepassxc
 
 ## startup scripts ##
