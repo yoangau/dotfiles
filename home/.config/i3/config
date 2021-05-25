@@ -100,8 +100,12 @@ bindsym $mod+Shift+0 move container to workspace $workspace0
 
 assign [class="keepassxc"] $workspace0
 assign [class="discord"] $workspace5
-# assign [class="wavebox"] $workspace8
-# assign [class="Caprine"] $workspace7
+assign [class="Slack"] $workspace9
+assign [class="Steam"] $workspace8
+# assign [class="Spotify"] $workspace0
+for_window [class="Spotify"] move to workspace $workspace0
+assign [class="Code"] $workspace2
+assign [class="Microsoft Teams - Preview"] $workspace9
 
 for_window [class="^Pavucontrol$"] floating enable
 for_window [title="Discord Updater"] floating enable
@@ -381,7 +385,7 @@ exec --no-startup-id xss-lock -l lock
 # exec --no-startup-id caprine
 # exec --no-startup-id wavebox
 exec --no-startup-id amixer sset Master mute
-exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper.png
+exec --no-startup-id hsetroot -full ~/.config/i3/wallpaper01.jpg
 exec --no-startup-id xsetwacom set "Wacom Bamboo Connect Pen stylus" rotate ccw
 exec --no-startup-id sudo modprobe i2c-dev i2c-piix4
 exec --no-startup-id sudo openrgb --profile default.orp
