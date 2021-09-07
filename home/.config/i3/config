@@ -102,6 +102,7 @@ assign [class="keepassxc"] $workspace0
 assign [class="discord"] $workspace5
 assign [class="Slack"] $workspace9
 assign [class="Steam"] $workspace8
+assign [class="Ferdi"] $workspace7
 # assign [class="Spotify"] $workspace0
 for_window [class="Spotify"] move to workspace $workspace0
 assign [class="Code"] $workspace2
@@ -364,8 +365,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec google-chrome-beta
+bindsym $mod+b exec google-chrome-stable
 bindsym $mod+k exec keepassxc
+bindsym $mod+m exec ferdi
 
 ## startup scripts ##
 exec --no-startup-id launch_kitty
@@ -391,4 +393,5 @@ exec --no-startup-id sudo modprobe i2c-dev i2c-piix4
 exec --no-startup-id sudo openrgb --profile default.orp
 exec --no-startup-id insync start
 exec --no-startup-id noisetorch -i -t 85
+exec --no-startup-id polkit-dumb-agent
 
