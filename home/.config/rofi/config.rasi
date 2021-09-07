@@ -1,0 +1,6 @@
+configuration {
+  show-icons: true;
+  modi: "window,run,ssh,drun";
+  font: "Roboto Mono Bold 16";
+  theme: "onedark";
+}
