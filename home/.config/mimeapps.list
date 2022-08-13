@@ -1,11 +1,11 @@
 [Default Applications]
-application/pdf=google-chrome-beta.desktop
-text/plain=nvim.desktop
-text/x-shellscript=nvim.desktop
-text/html=google-chrome-beta.desktop
-x-scheme-handler/http=google-chrome-beta.desktop
-x-scheme-handler/https=google-chrome-beta.desktop
-x-scheme-handler/about=google-chrome-beta.desktop
-x-scheme-handler/unknown=google-chrome-beta.desktop
-x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
-
+application/pdf=google-chrome-beta.desktop;
+inode/directory=nautilus.desktop;
+text/html=google-chrome-beta.desktop;
+text/plain=nvim.desktop;
+text/x-shellscript=nvim.desktop;
+x-scheme-handler/about=google-chrome.desktop;google-chrome-beta.desktop;
+x-scheme-handler/http=google-chrome.desktop;google-chrome-beta.desktop;
+x-scheme-handler/https=google-chrome.desktop;google-chrome-beta.desktop;
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop;
+x-scheme-handler/unknown=google-chrome.desktop;google-chrome-beta.desktop;

@@ -102,9 +102,9 @@ assign [class="keepassxc"] $workspace0
 assign [class="discord"] $workspace5
 assign [class="Slack"] $workspace9
 assign [class="Steam"] $workspace8
-assign [class="Ferdi"] $workspace7
 assign [class="^Unity$"] $workspace4
 assign [class="unityhub"] $workspace4
+assign [class="Insomnia"] $workspace3
 # assign [class="Spotify"] $workspace0
 for_window [class="Spotify"] move to workspace $workspace0
 assign [class="Code"] $workspace2
@@ -341,7 +341,7 @@ bindsym $mod+n mode $power_control
 bindsym $alt+F4 kill
 bindsym --release $mod+Shift+x exec xkill
 
-bindsym $mod+p exec monitors
+bindsym $mod+p exec code & unityhub
 bindsym $mod+t exec toggle_light
 bindsym $mod+$alt+l exec lock
 
@@ -370,7 +370,7 @@ bindsym XF86MonBrightnessDown exec light -U 10
 
 bindsym $mod+b exec "google-chrome-stable --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'"
 bindsym $mod+k exec keepassxc
-bindsym $mod+m exec ferdi & discord
+bindsym $mod+m exec "google-chrome-stable --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT' gmail.com messenger.com linkedin.com & discord"
 
 ## startup scripts ##
 exec --no-startup-id launch_kitty

@@ -13,16 +13,18 @@ set -xg PATH $PATH $HOME/.dotnet/tools
 set -xg PATH $PATH $ANDROID_HOME/tools
 set -xg PATH $PATH $ANDROID_HOME/platform-tools
 set -xg PATH $PATH $HOME/.gem/ruby/2.7.0/bin
+set -xg PATH $PATH $HOME/.gem/ruby/3.0.0/bin
 
 # dotnet
 set -xg DOTNET_CLI_TELEMETRY_OPTOUT 1
 set -xg DOTNET_ROOT /opt/dotnet
+set -xg LD_LIBRARY_PATH /usr/local/lib
 
 # Vim
 set -xg SPACEVIMDIR $HOME/.config/spacevim/
 
 # Misc
-set -xg TZ "America/Montreal"
+set -xg TZ "America/Vancouver"
 set -xg VISUAL "nvim"
 set -xg EDITOR "nvim"
 set -xg TERM "xterm"
@@ -45,3 +47,12 @@ set -xg _JAVA_AWT_WM_NONREPARENTING 1
 
 # Cuda
 set -xg CUDA_HOME /opt/cuda
+
+# Fonts
+set -xg FONTCONFIG_PATH /etc/fonts
+set -xg FONTCONFIG_FILE /etc/fonts/fonts.conf
+
+# Desktop Env
+# set -xg XDG_CURRENT_DESKTOP i3
+# set -xg XDG_SESSION_DESkTOP i3
+
