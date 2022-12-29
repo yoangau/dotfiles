@@ -368,9 +368,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym XF86MonBrightnessDown exec light -U 10
 
-bindsym $mod+b exec "google-chrome-stable --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'"
+bindsym $mod+b exec "google-chrome-stable --no-sandbox --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT'"
 bindsym $mod+k exec keepassxc
-bindsym $mod+m exec "google-chrome-stable --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT' gmail.com messenger.com linkedin.com & discord"
+bindsym $mod+m exec "google-chrome-stable --no-sandbox --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT' gmail.com messenger.com linkedin.com & discord"
 
 ## startup scripts ##
 exec --no-startup-id launch_kitty

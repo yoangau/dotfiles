@@ -15,6 +15,8 @@ set -xg PATH $PATH $ANDROID_HOME/platform-tools
 set -xg PATH $PATH $HOME/.gem/ruby/2.7.0/bin
 set -xg PATH $PATH $HOME/.gem/ruby/3.0.0/bin
 
+set -xg PATH $PATH $HOME/.local/bin
+
 # dotnet
 set -xg DOTNET_CLI_TELEMETRY_OPTOUT 1
 set -xg DOTNET_ROOT /opt/dotnet
