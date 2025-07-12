@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# For this to work you must configure sudo such that
+# it will be able to run the command without password
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# General configuration
+yabai -m config mouse_follows_focus                 off
+yabai -m config focus_follows_mouse                 off
+yabai -m config window_placement                    second_child
+yabai -m config window_topmost                      off
+yabai -m config window_shadow                       on
+yabai -m config active_window_border                on
+yabai -m config active_window_border_color          0xff775759
+yabai -m config insert_after_focus                  off
+
+# Padding and gaps
+yabai -m config layout              bsp
+yabai -m config auto_balance        on
+yabai -m config window_gap          2
+yabai -m config top_padding         2
+yabai -m config bottom_padding      2
+yabai -m config left_padding        2
+yabai -m config right_padding       2
+
+# Layout toggle function
+function toggle_layout() {
+    current_layout=$(yabai -m query --spaces --space | jq -r '.type')
+    if [ "$current_layout" = "bsp" ]; then
+        yabai -m space --layout stack
+    else
+        yabai -m space --layout bsp
+    fi
+}
+
+# Make toggle function available globally
+export -f toggle_layout
+
+# App-to-space rules
+yabai -m rule --add app="^Google Chrome$"           space=1
+yabai -m rule --add app="^Firefox$"                 space=1
+yabai -m rule --add app="^Code$"                    space=2
+yabai -m rule --add app="^Unity$"                   space=3
+yabai -m rule --add app="^Unity Hub$"               space=3
+yabai -m rule --add app="^Discord$"                 space=5
+yabai -m rule --add app="^Signal$"                  space=7
+yabai -m rule --add app="^Spotify$"                 space=8
+yabai -m rule --add app="^Notion Calendar$"         space=10
+
+# Sticky windows: appear in all spaces
+yabai -m rule --add app="^Finder$"                  manage=off sticky=on
+yabai -m rule --add app="^Notes$"                   manage=off sticky=on
+yabai -m rule --add title="^Who's using Chrome\?$"  manage=off sticky=on
+
+
+# Floating apps
+yabai -m rule --add app="^iTerm2$"                  		manage=off
+yabai -m rule --add app="^KeePassXC$"               		manage=off
+yabai -m rule --add app="^System Preferences$"      		manage=off
+yabai -m rule --add app="^System Settings$"      		    manage=off
+yabai -m rule --add app="^Unity Hub$"               		manage=off
+yabai -m rule --add app="^Unity$"	title="^Test Runner$"	manage=off
+yabai -m rule --add app="^Blender$"                 		manage=off
+yabai -m rule --add app="^Cron$"                    		manage=off
+yabai -m rule --add app="^Mullvad VPN$"  	                manage=off

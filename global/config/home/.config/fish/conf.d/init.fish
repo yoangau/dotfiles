@@ -90,7 +90,13 @@ if test -n "$is_macos"
 end
 
 # dotfiles
-alias update-dotfiles='curl -L https://raw.githubusercontent.com/arch-anes/dotfiles/master/install.sh | bash'
+alias update-dotfiles='curl -L https://raw.githubusercontent.com/yoangau/dotfiles/master/install.sh | bash'
+
+# Quick access
+alias dow="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias dot="cd ~/Documents/dotfiles"
+alias pro="cd ~/Documents/projects"
 
 # Git
 alias find-git-repos="find -type d -exec test -e '{}/.git' ';' -print -prune -path"
@@ -146,7 +152,14 @@ end
 if status --is-login
     # Check if fisher has 0 plugins or 1 plugin (fisher itself)
     if type -q fisher; and test (fisher list | wc -l) -eq 0 -o (fisher list | wc -l) -eq 1
-        fisher install jorgebucaran/fisher jhillyerd/plugin-git franciscolourenco/done gazorby/fish-abbreviation-tips
+        fisher install \
+            jorgebucaran/fisher \
+            jhillyerd/plugin-git \
+            franciscolourenco/done \
+            gazorby/fish-abbreviation-tips \
+            jorgebucaran/nvm.fish \
+            jorgebucaran/humantime.fish \
+            Scrumplex/bobthefisher
     end
 end
 

@@ -65,10 +65,9 @@
 [tag]
   sort = version:refname
 
-[url "https://github.com/abelfodil/"]
+[url "https://github.com/yoangau/"]
   insteadOf = me:
 
 [user]
-  email = ans.belfodil@gmail.com
-  name = Anes Belfodil
-  signingkey = B584EA228B133FAF73ED0D0E7BDFAE29F1DE8EFE
+  email = yoangau@gmail.com
+  name = Yoan Gauthier

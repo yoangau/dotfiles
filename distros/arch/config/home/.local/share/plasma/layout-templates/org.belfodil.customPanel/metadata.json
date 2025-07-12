@@ -1,22 +1,20 @@
 {
-    "KPackageStructure": "Plasma/LayoutTemplate",
-    "KPlugin": {
-        "Authors": [
-            {
-                "Email": "anes@belfodil.ca",
-                "Name": "Anes Belfodil"
-            }
-        ],
-        "Category": "",
-        "Description": "Custom panel featuring application launcher, task manager and more.",
-        "EnabledByDefault": true,
-        "Id": "org.belfodil.customPanel",
-        "License": "LGPLv2+",
-        "Name": "Belfodil Panel",
-        "Website": "https://belfodil.ca"
-    },
-    "X-Plasma-ContainmentCategories": [
-        "panel"
+  "KPackageStructure": "Plasma/LayoutTemplate",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "anes@belfodil.ca",
+        "Name": "Anes Belfodil"
+      }
     ],
-    "X-Plasma-Shell": "plasmashell"
+    "Category": "",
+    "Description": "Custom panel featuring application launcher, task manager and more.",
+    "EnabledByDefault": true,
+    "Id": "org.belfodil.customPanel",
+    "License": "LGPLv2+",
+    "Name": "Belfodil Panel",
+    "Website": "https://belfodil.ca"
+  },
+  "X-Plasma-ContainmentCategories": ["panel"],
+  "X-Plasma-Shell": "plasmashell"
 }
