@@ -19,6 +19,7 @@ gh
 git
 git-lfs
 glib
+gnupg
 gpatch
 harfbuzz
 helix
@@ -31,6 +32,7 @@ libarchive
 libass
 libev
 libtiff
+mise
 ncdu
 neovim
 nnn

@@ -87,6 +87,7 @@ if test -n "$is_macos"
     alias remove='brew uninstall'
     alias update='brew update && brew upgrade'
     alias install='brew install'
+    alias init='sudo yabai --load-sa && yabai --start-service && skhd --start-service && brew update && brew upgrade && brew cleanup --prune=all && npm update -g'
 end
 
 # dotfiles
@@ -133,6 +134,7 @@ alias lspci='lspci -nnk'
 
 alias :q="exit"
 
+
 #################
 ### Functions ###
 #################
@@ -147,20 +149,6 @@ end
 ###############
 if type -q /home/linuxbrew/.linuxbrew/bin/brew
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)
-end
-
-if status --is-login
-    # Check if fisher has 0 plugins or 1 plugin (fisher itself)
-    if type -q fisher; and test (fisher list | wc -l) -eq 0 -o (fisher list | wc -l) -eq 1
-        fisher install \
-            jorgebucaran/fisher \
-            jhillyerd/plugin-git \
-            franciscolourenco/done \
-            gazorby/fish-abbreviation-tips \
-            jorgebucaran/nvm.fish \
-            jorgebucaran/humantime.fish \
-            Scrumplex/bobthefisher
-    end
 end
 
 if type -q starship

@@ -1,0 +1,150 @@
+{
+    "Profiles": [
+        {
+            "ASCII Ligatures": true,
+            "ASCII Anti Aliased": true,
+            "Selected Text Color": {
+                "Green Component": 0.83921568627450982,
+                "Red Component": 0.80392156862745101,
+                "Blue Component": 0.95686274509803926
+            },
+            "Cursor Color": {
+                "Green Component": 0.8784313725490196,
+                "Red Component": 0.96078431372549022,
+                "Blue Component": 0.86274509803921573
+            },
+            "Command": "/opt/homebrew/bin/fish",
+            "Unlimited Scrollback": true,
+            "Ansi 5 Color": {
+                "Green Component": 0.76078431372549016,
+                "Red Component": 0.96078431372549022,
+                "Blue Component": 0.90588235294117647
+            },
+            "Use Bright Bold": false,
+            "Name": "Pastel Powerline",
+            "Use Non-ASCII Font": false,
+            "Non Ascii Font": "Monaco 12",
+            "Columns": 120,
+            "Terminal Type": "xterm-256color",
+            "Initial Text": "",
+            "Cursor Type": 2,
+            "Rows": 25,
+            "Ansi 4 Color": {
+                "Green Component": 0.70588235294117652,
+                "Red Component": 0.53725490196078429,
+                "Blue Component": 0.98039215686274506
+            },
+            "Blinking Cursor": false,
+            "Tags": [
+                "starship",
+                "pastel",
+                "powerline"
+            ],
+            "Foreground Color": {
+                "Green Component": 0.83921568627450982,
+                "Red Component": 0.80392156862745101,
+                "Blue Component": 0.95686274509803926
+            },
+            "Ansi 10 Color": {
+                "Green Component": 0.8901960784313725,
+                "Red Component": 0.65098039215686276,
+                "Blue Component": 0.63137254901960782
+            },
+            "Ansi 3 Color": {
+                "Green Component": 0.88627450980392153,
+                "Red Component": 0.97647058823529409,
+                "Blue Component": 0.68627450980392157
+            },
+            "Use Bold Font": true,
+            "Ansi 12 Color": {
+                "Green Component": 0.70588235294117652,
+                "Red Component": 0.53725490196078429,
+                "Blue Component": 0.98039215686274506
+            },
+            "Ansi 14 Color": {
+                "Green Component": 0.88627450980392153,
+                "Red Component": 0.58039215686274515,
+                "Blue Component": 0.83529411764705885
+            },
+            "Use Italic Font": true,
+            "Ansi 2 Color": {
+                "Green Component": 0.8901960784313725,
+                "Red Component": 0.65098039215686276,
+                "Blue Component": 0.63137254901960782
+            },
+            "Blur": false,
+            "Ansi 9 Color": {
+                "Green Component": 0.54509803921568623,
+                "Red Component": 0.95294117647058818,
+                "Blue Component": 0.6588235294117647
+            },
+            "Guid": "A1B2C3D4-E5F6-47A8-9B10-111213141516",
+            "Custom Command": "Yes",
+            "Transparency": 0,
+            "Selection Color": {
+                "Green Component": 0.35686274509803922,
+                "Red Component": 0.34509803921568627,
+                "Blue Component": 0.4392156862745098
+            },
+            "Ansi 1 Color": {
+                "Green Component": 0.54509803921568623,
+                "Red Component": 0.95294117647058818,
+                "Blue Component": 0.6588235294117647
+            },
+            "Description": "Pastel-friendly profile for Starship powerline presets",
+            "Non-ASCII Anti Aliased": true,
+            "Working Directory": "~",
+            "Ansi 8 Color": {
+                "Green Component": 0.35686274509803922,
+                "Red Component": 0.34509803921568627,
+                "Blue Component": 0.4392156862745098
+            },
+            "Rewritable": true,
+            "Minimum Contrast": 0,
+            "Background Color": {
+                "Green Component": 0.11764705882352941,
+                "Red Component": 0.11764705882352941,
+                "Blue Component": 0.1803921568627451
+            },
+            "Ansi 0 Color": {
+                "Green Component": 0.27843137254901962,
+                "Red Component": 0.27058823529411763,
+                "Blue Component": 0.35294117647058826
+            },
+            "Ansi 7 Color": {
+                "Green Component": 0.76078431372549016,
+                "Red Component": 0.72941176470588232,
+                "Blue Component": 0.87058823529411766
+            },
+            "Custom Directory": "No",
+            "Scrollback Lines": 0,
+            "Cursor Text Color": {
+                "Green Component": 0.11764705882352941,
+                "Red Component": 0.11764705882352941,
+                "Blue Component": 0.1803921568627451
+            },
+            "Normal Font": "FiraCodeNerdFont-Regular 12",
+            "Ansi 11 Color": {
+                "Green Component": 0.88627450980392153,
+                "Red Component": 0.97647058823529409,
+                "Blue Component": 0.68627450980392157
+            },
+            "Ansi 13 Color": {
+                "Green Component": 0.76078431372549016,
+                "Red Component": 0.96078431372549022,
+                "Blue Component": 0.90588235294117647
+            },
+            "Draw Powerline Glyphs": true,
+            "Ansi 6 Color": {
+                "Green Component": 0.88627450980392153,
+                "Red Component": 0.58039215686274515,
+                "Blue Component": 0.83529411764705885
+            },
+            "Ansi 15 Color": {
+                "Green Component": 0.67843137254901964,
+                "Red Component": 0.65098039215686276,
+                "Blue Component": 0.78431372549019607
+            }
+        }
+    ]
+}

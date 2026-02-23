@@ -1,0 +1,31 @@
+{
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "productID" : "0xc24a",
+          "category" : "mouse",
+          "productName" : "Gaming Mouse G600",
+          "vendorID" : "0x46d",
+          "serialNumber" : "2FA92BBD71DD0017"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.35,
+        "acceleration" : 0
+      },
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 0
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
+}

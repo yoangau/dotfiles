@@ -19,6 +19,15 @@ NONINTERACTIVE=1 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 
 brew install $(cat $source_dir/packages/*)
 
+# curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+
+# fisher install \
+#     jorgebucaran/fisher \
+#     jhillyerd/plugin-git \
+#     franciscolourenco/done \
+#     gazorby/fish-abbreviation-tips \
+#     jorgebucaran/nvm.fish \
+#     jorgebucaran/humantime.fish
 ##############
 ### Config ###
 ##############
