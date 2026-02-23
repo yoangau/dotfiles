@@ -5,6 +5,8 @@
 # Fish
 set -xg fish_prompt_pwd_dir_length 0
 set -xg fish_greeting ""
+set -g fish_color_command 9FE7E8
+set -g fish_color_error FF9AA2
 
 # Go
 fish_add_path -a $HOME/go/bin
