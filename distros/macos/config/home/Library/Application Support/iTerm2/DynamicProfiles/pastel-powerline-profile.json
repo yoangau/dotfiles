@@ -315,7 +315,7 @@
   "Name" : "Pastel Powerline",
   "Load Shell Integration Automatically" : true,
   "Rewritable" : true,
-  "Transparency" : 0.127521054964539,
+  "Transparency" : 0.39547318262411346,
   "Horizontal Spacing" : 1,
   "Thin Strokes" : 4,
   "Cursor Color (Dark)" : {
@@ -429,7 +429,7 @@
     "pastel",
     "powerline"
   ],
-  "Blur Radius" : 17.196077127659574,
+  "Blur Radius" : 20.047997007978726,
   "Ansi 6 Color (Light)" : {
     "Green Component" : 0.77254900000000004,
     "Blue Component" : 0.99607840000000003,
