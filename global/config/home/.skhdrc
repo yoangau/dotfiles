@@ -25,3 +25,7 @@ shift + ctrl - 0 : yabai -m window --space 10
 
 # Toggle between stacked and tiled layout
 shift + ctrl - t : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "stack" else "bsp" end')
+
+# Screenshots
+shift + ctrl - p : screencapture -i -c
+alt + shift + ctrl - p : screencapture -i "$HOME/Desktop/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
